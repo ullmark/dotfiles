@@ -1,0 +1,34 @@
+" reduce vi compatibility for more usefult stuff
+set nocompatible
+set nohlsearch
+set ttyfast
+set t_Co=256
+set synmaxcol=250
+set magic
+set nowrap
+set modelines=0
+set enc=utf-8
+set foldlevel=99
+set expandtab
+set textwidth=0 wrapmargin=0
+set complete-=i
+set noeb vb t_vb=
+set complete-=i
+
+" Set Color Theme
+colorscheme railscasts
+let mapleader=","
+
+" Tab between buffers
+noremap <tab> <c-w><c-w>
+
+" Switch between last two buffers
+nnoremap <leader><leader> <C-^>
+
+" Autofix extra whitespace on write for the following filetypes
+autocmd BufWritePre *.rb :%s/\s\+$//e
+autocmd BufWritePre *.haml :%s/\s\+$//e
+autocmd BufWritePre *.html :%s/\s\+$//e
+autocmd BufWritePre *.scss :%s/\s\+$//e
+autocmd BufWritePre *.coffee :%s/\s\+$//e
+autocmd BufWritePre *.lisp :%s/\s\+$//e

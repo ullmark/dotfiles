@@ -1,4 +1,33 @@
 if has("gui_macvim")
-  " Set Color Theme
-  colorscheme railscasts
+  set fuoptions=maxvert,maxhorz
+  set guifont=Monaco:h16
+  set guioptions=aAce
+  set columns=179
+  set lines=50
+  set noballooneval
+  set laststatus=2
+  let g:mapleader = ","
+
+  " remove pipes in vertical split
+  set fillchars=vert:\ 
+
+  " customize some gui elements
+  " this is a copy from the color theme, so should 
+  " be able to remove it somehow
+  hi Normal                    guifg=#E6E1DC guibg=#2B2B2B
+  hi Cursor                    guibg=#FFFFFF
+  hi CursorLine                guibg=#333435
+  hi Search                    guibg=#5A647E
+  hi Visual                    guibg=#5A647E
+  hi LineNr                    guibg=#333435 guifg=#777777 gui=NONE
+  hi StatusLine                guibg=#414243 gui=NONE guifg=#E6E1DC
+  hi StatusLineNC              guibg=#414243 gui=NONE
+  hi VertSplit                 guibg=#414243 gui=NONE guifg=#414243
+
+  " Disable beeps and flashes
+  au GUIEnter * set vb t_vb=
+
+  " Fugitive config settings
+  nmap <F2> :Gstatus<CR>
+  nmap <F3> :Gdiff<CR>
 endif
