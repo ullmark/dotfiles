@@ -1,5 +1,5 @@
-source ./bash/path.sh
-source ./bash/env.sh
-source ./bash/prompt.sh
-source ./bash/aliases.sh
-source ./bash/functions.sh
+source ~/.dotfiles/bash/path.sh
+source ~/.dotfiles/bash/env.sh
+source ~/.dotfiles/bash/prompt.sh
+source ~/.dotfiles/bash/aliases.sh
+source ~/.dotfiles/bash/functions.sh

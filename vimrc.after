@@ -19,6 +19,9 @@ set complete-=i
 colorscheme railscasts
 let mapleader=","
 
+" Map :W to :w since i always accidentally press wrong
+"map :W :w
+
 " Tab between buffers
 noremap <tab> <c-w><c-w>
 
