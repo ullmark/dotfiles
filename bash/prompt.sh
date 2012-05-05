@@ -43,7 +43,7 @@ bash_prompt() {
   # reset
   local RESET="\[\033[0;37m\]"
 
-  PS1="\t $BY\u@\h $Y\w$G[\$(__rvm_prompt)$G\$(__git_prompt)]$RESET$ "
+  PS1="$BY\u@\h $Y\w$G[\$(__rvm_prompt)$G\$(__git_prompt)]$RESET$ "
 
 }
 
