@@ -35,3 +35,5 @@ autocmd BufWritePre *.html :%s/\s\+$//e
 autocmd BufWritePre *.scss :%s/\s\+$//e
 autocmd BufWritePre *.coffee :%s/\s\+$//e
 autocmd BufWritePre *.lisp :%s/\s\+$//e
+
+let g:Powerline_symbols = 'fancy'

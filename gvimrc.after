@@ -12,7 +12,7 @@ if has("gui_macvim")
   set fillchars=vert:\ 
 
   " customize some gui elements
-  " this is a copy from the color theme, so should 
+  " this is a copy from the color theme but it is'n applied, so should 
   " be able to remove it somehow
   hi Normal                    guifg=#E6E1DC guibg=#2B2B2B
   hi Cursor                    guibg=#FFFFFF
