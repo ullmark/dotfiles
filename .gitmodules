@@ -4,3 +4,6 @@
 [submodule "janus/vim-jade"]
 	path = janus/vim-jade
 	url = https://github.com/digitaltoad/vim-jade.git
+[submodule "janus/vim.stylus"]
+	path = janus/vim.stylus
+	url = https://github.com/wavded/vim-stylus.git
