@@ -1,6 +1,9 @@
 # Dirs
 alias o="open ."  # OS X, open in Finder
 
+# Files
+alias t='touch'
+
 # Management
 alias dots="mvim ~/.dotfiles"
 alias reload='source ~/.bash_profile && echo "sourced ~/.bash_profile"'
