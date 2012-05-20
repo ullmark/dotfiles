@@ -29,6 +29,7 @@ noremap <tab> <c-w><c-w>
 nnoremap <leader><leader> <C-^>
 
 " Autofix extra whitespace on write for the following filetypes
+autocmd BufWritePre *.js :%s/\s\+$//e
 autocmd BufWritePre *.rb :%s/\s\+$//e
 autocmd BufWritePre *.haml :%s/\s\+$//e
 autocmd BufWritePre *.html :%s/\s\+$//e
