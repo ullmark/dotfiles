@@ -27,6 +27,11 @@ def user_agrees?(msg)
   STDIN.gets.match(/^y/i)
 end
 
+desc "Installs the applications"
+task :apps do
+
+end
+
 # Task that installs all the symlinks needed
 desc "Installs the dotfiles."
 task :install do
