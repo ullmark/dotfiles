@@ -38,3 +38,6 @@ autocmd BufWritePre *.coffee :%s/\s\+$//e
 autocmd BufWritePre *.lisp :%s/\s\+$//e
 
 let g:Powerline_symbols = 'fancy'
+
+" Hide folders in NERTree
+let NERDTreeIgnore=['node_modules']
