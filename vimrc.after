@@ -41,3 +41,9 @@ let g:Powerline_symbols = 'fancy'
 
 " Hide folders in NERTree
 let NERDTreeIgnore=['node_modules']
+
+" Exclude folders in ctrlp.vim
+let g:ctrlp_custom_ignore = {
+  \ 'node_modules': '\/node_modules\/',
+  \ 'source_control': '\.git|\.svn'
+  \ }
