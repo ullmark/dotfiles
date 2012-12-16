@@ -14,8 +14,10 @@ set textwidth=0 wrapmargin=0
 set complete-=i
 set noeb vb t_vb=
 set complete-=i
+set wildignore=node_modules*
 
 " Set Color Theme
+"set background=dark
 colorscheme railscasts
 let mapleader=","
 
