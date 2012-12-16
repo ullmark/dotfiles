@@ -3,8 +3,6 @@
 # http://tammersaleh.com/posts/a-better-rvm-bash-prompt
 # https://rvm.beginrescueend.com/workflow/prompt/
 
-# 17:39:15 henrik@Nyx ~/project[ree-1.8.7@project master*]$ 
-
 # git bash completion.
 # Required for the prompt. Also provides autocompletion of git commands and branch names.
 . ~/.dotfiles/bash/lib/git-completion.bash
@@ -15,7 +13,7 @@ function __rvm_prompt {
 
 function __git_prompt {
   GIT_PS1_SHOWDIRTYSTATE=1
-  __git_ps1 " %s" | sed 's/ \([+*]\{1,\}\)$/\1/'
+  __git_ps1 "%s" | sed 's/ \([+*]\{1,\}\)$/\1/'
 }
 
 bash_prompt() {
@@ -43,7 +41,7 @@ bash_prompt() {
   # reset
   local RESET="\[\033[0;37m\]"
 
-  PS1="$BY\u@\h $Y\w$G[\$(__rvm_prompt)$G\$(__git_prompt)]$RESET$ "
+  PS1="$BY\u@\h $Y\w$G[\$(__git_prompt)]$RESET$ "
 
 }
 
