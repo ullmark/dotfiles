@@ -17,12 +17,16 @@ set complete-=i
 set wildignore=node_modules*
 
 " Set Color Theme
-"set background=dark
-colorscheme railscasts
+color codeschool
+set guifont=Monaco:h12
+let g:NERDTreeWinPos = "right"
+set guioptions-=T " Removes top toolbar
+set guioptions-=r " Removes right hand scroll bar
+set go-=L " Removes left hand scroll bar
 let mapleader=","
 
 " Map :W to :w since i always accidentally press wrong
-command W w
+" command W w
 
 " Tab between buffers
 noremap <tab> <c-w><c-w>
@@ -41,5 +45,3 @@ autocmd BufWritePre *.lisp :%s/\s\+$//e
 
 let g:Powerline_symbols = 'fancy'
 
-" Hide folders in NERTree
-let NERDTreeIgnore=['node_modules']
