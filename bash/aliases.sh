@@ -28,23 +28,15 @@ elif ls -G -d . >/dev/null 2>&1; then
 fi
 alias ll='ls -l'
 
-# Ruby on Rails
-alias sc="[ -f script/console ] && script/console || bundle exec rails console"
-alias sdb="[ -f script/dbconsole ] && script/console --include-password || bundle exec rails dbconsole --include-password"
-alias ss="[ -f script/server ] && script/server || rails server"
-alias mig='rake db:migrate'
-alias rsp="bundle exec specjour"
-alias f="foreman start"
-
 # Git
 alias gl="git log"
 alias gs="git status"
+alias ga="git add"
 alias gw="git show"
 alias gd="git diff"  # What's changed but not yet added?
 alias gdc="git diff --cached"  # What's added but not yet committed?
 alias gc="git commit -a -m"
 alias gco="git commit -m"  # "only"
-alias gca="git add . && git commit -a -m"  # "all"
 alias gp='git push'
 alias gpp='git pull --rebase && git push'
 alias gppp='git pull && git push'
@@ -57,6 +49,9 @@ alias grr="git branch -D"
 alias gcp="git cherry-pick"
 alias gam="git commit --amend"
 alias gg="git log --grep"
+
+# Mercurial
+alias hs="hg status"
 
 alias hosts='sudo mvim /etc/hosts'
 
