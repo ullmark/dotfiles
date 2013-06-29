@@ -1,4 +1,4 @@
-IGNORE_FILES = ['Rakefile', 'README.md', 'bash']
+IGNORE_FILES = ['Rakefile', 'README.md', 'bash', 'shared']
 
 # Colors the provided message green
 def green(msg)
