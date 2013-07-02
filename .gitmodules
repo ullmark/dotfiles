@@ -10,3 +10,6 @@
 [submodule "janus/vim-less"]
 	path = janus/vim-less
 	url = https://github.com/groenewege/vim-less
+[submodule "janus/csapprox"]
+	path = janus/csapprox
+	url = https://github.com/godlygeek/csapprox.git

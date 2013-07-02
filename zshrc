@@ -9,8 +9,9 @@ DOTS=$HOME/.dotfiles
 ZSH_THEME="af-magic"
 
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+source $DOTS/shared/aliases.sh
+# reload zsh settings
+alias reload="source $HOME/.zshrc"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
