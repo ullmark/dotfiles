@@ -8,9 +8,7 @@ DOTS=$HOME/.dotfiles
 # time that oh-my-zsh is loaded.
 ZSH_THEME="af-magic"
 
-# Example aliases
-source $DOTS/shared/aliases.sh
-# reload zsh settings
+# alias for reloading zsh settings
 alias reload="source $HOME/.zshrc"
 
 # Set to this to use case-sensitive completion
@@ -45,4 +43,6 @@ alias reload="source $HOME/.zshrc"
 plugins=(git osx)
 
 source $ZSH/oh-my-zsh.sh
+source $DOTS/shared/env.sh
+source $DOTS/shared/aliases.sh
 source $DOTS/shared/path.sh

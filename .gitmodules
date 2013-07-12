@@ -13,3 +13,6 @@
 [submodule "janus/csapprox"]
 	path = janus/csapprox
 	url = https://github.com/godlygeek/csapprox.git
+[submodule "janus/vim-jst"]
+	path = janus/vim-jst
+	url = https://github.com/briancollins/vim-jst

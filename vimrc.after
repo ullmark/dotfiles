@@ -14,16 +14,18 @@ set textwidth=0 wrapmargin=0
 set complete-=i
 set noeb vb t_vb=
 set complete-=i
-set wildignore=node_modules*
 
 " Set Color Theme
-color codeschool
-set guifont=Monaco:h12
+colors zenburn 
+set guifont=Monaco:h16
 let g:NERDTreeWinPos = "right"
 set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar
 set go-=L " Removes left hand scroll bar
 let mapleader=","
+
+" remove pipes in vertical split
+set fillchars=vert:\ 
 
 " Map :W to :w since i always accidentally press wrong
 " command W w
