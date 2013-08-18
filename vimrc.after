@@ -33,6 +33,9 @@ set fillchars=vert:\
 " Tab between buffers
 noremap <tab> <c-w><c-w>
 
+" Use space for :
+noremap <space> :
+
 " Switch between last two buffers
 nnoremap <leader><leader> <C-^>
 
