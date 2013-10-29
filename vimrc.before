@@ -1,4 +1,4 @@
 let mapleader = ","
 set t_Co=256
 
-call janus#disable_plugin('supertab')
+" call janus#disable_plugin('supertab')

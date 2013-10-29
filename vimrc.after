@@ -18,7 +18,6 @@ set complete-=i
 " Set Color Theme
 colors zenburn 
 set guifont=Monaco:h16
-let g:NERDTreeWinPos = "right"
 set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar
 set go-=L " Removes left hand scroll bar
@@ -47,6 +46,7 @@ autocmd BufWritePre *.html :%s/\s\+$//e
 autocmd BufWritePre *.scss :%s/\s\+$//e
 autocmd BufWritePre *.coffee :%s/\s\+$//e
 autocmd BufWritePre *.lisp :%s/\s\+$//e
+autocmd BufWritePre *.php :%s/\s\+$//e
 
 let g:Powerline_symbols = 'fancy'
 

@@ -8,9 +8,6 @@ DOTS=$HOME/.dotfiles
 # time that oh-my-zsh is loaded.
 ZSH_THEME="af-magic"
 
-# alias for reloading zsh settings
-alias reload="source $HOME/.zshrc"
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
