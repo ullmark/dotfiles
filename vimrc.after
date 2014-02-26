@@ -14,6 +14,8 @@ set textwidth=0 wrapmargin=0
 set complete-=i
 set noeb vb t_vb=
 set complete-=i
+" I want a slighly bigger preview window.
+set previewheight=25
 
 " Set Color Theme
 colors zenburn 
@@ -37,6 +39,8 @@ noremap <space> :
 
 " Switch between last two buffers
 nnoremap <leader><leader> <C-^>
+
+au BufRead,BufNewFile *.html set filetype=mustache
 
 " Autofix extra whitespace on write for the following filetypes
 autocmd BufWritePre *.js :%s/\s\+$//e
