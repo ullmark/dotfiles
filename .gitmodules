@@ -16,3 +16,6 @@
 [submodule "janus/vim-jst"]
 	path = janus/vim-jst
 	url = https://github.com/briancollins/vim-jst
+[submodule "janus/mustache"]
+	path = janus/mustache
+	url = git://github.com/mustache/vim-mode.git

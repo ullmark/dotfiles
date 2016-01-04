@@ -1,0 +1,5 @@
+.DS_Store
+atom/packages
+atom/blob-store
+atom/.apm
+node_modules
