@@ -18,7 +18,7 @@ set complete-=i
 " Set Color Theme
 colors zenburn 
 set guifont=Monaco:h16
-let g:NERDTreeWinPos = "right"
+let g:NERDTreeWinPos = "left"
 set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar
 set go-=L " Removes left hand scroll bar
@@ -38,6 +38,9 @@ noremap <space> :
 
 " Switch between last two buffers
 nnoremap <leader><leader> <C-^>
+
+" default to mustache for .html files... for now?
+autocmd BufRead,BufNewFile *.html set filetype=mustache
 
 " Autofix extra whitespace on write for the following filetypes
 autocmd BufWritePre *.js :%s/\s\+$//e

@@ -19,3 +19,5 @@ alias http="python -m SimpleHTTPServer 8080"
 
 # Util
 alias d="mvim -v ."
+
+alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"

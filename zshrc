@@ -6,7 +6,7 @@ DOTS=$HOME/.dotfiles
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="af-magic"
+ZSH_THEME="gallois"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -37,11 +37,9 @@ ZSH_THEME="af-magic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx vi-mode)
+plugins=(git osx)
 
 source $ZSH/oh-my-zsh.sh
 source $DOTS/shared/env.sh
 source $DOTS/shared/aliases.sh
 source $DOTS/shared/path.sh
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
