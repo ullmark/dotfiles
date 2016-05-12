@@ -54,6 +54,29 @@ autocmd BufWritePre *.php :%s/\s\+$//e
 
 let g:Powerline_symbols = 'fancy'
 
+" NERDTress File highlighting
+function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
+ exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+ exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+
+call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#3f3f3f')
+call NERDTreeHighlightFile('md', 'blue', 'none', '#dca3a3', '#3f3f3f')
+call NERDTreeHighlightFile('yml', 'yellow', 'none', '#dca3a3', '#3f3f3f')
+call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#3f3f3f')
+call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#3f3f3f')
+call NERDTreeHighlightFile('json', 'yellow', 'none', '#ffd1b3', '#3f3f3f')
+call NERDTreeHighlightFile('html', 'yellow', 'none', '#7f9f7f', '#3f3f3f')
+call NERDTreeHighlightFile('jade', 'yellow', 'none', '#7f9f7f', '#3f3f3f')
+call NERDTreeHighlightFile('haml', 'yellow', 'none', '#7f9f7f', '#3f3f3f')
+call NERDTreeHighlightFile('styl', 'cyan', 'none', '#efdcbc', '#3f3f3f')
+call NERDTreeHighlightFile('css', 'cyan', 'none', '#efdcbc', '#3f3f3f')
+call NERDTreeHighlightFile('scss', 'cyan', 'none', '#efdcbc', '#3f3f3f')
+call NERDTreeHighlightFile('less', 'cyan', 'none', '#efdcbc', '#3f3f3f')
+call NERDTreeHighlightFile('coffee', 'Red', 'none', '#ffb380', '#3f3f3f')
+call NERDTreeHighlightFile('js', 'Red', 'none', '#ffb380', '#3f3f3f')
+call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#3f3f3f')
+
 " CtrlP
 nnoremap <silent> t :CtrlP<cr>
 nnoremap <silent><leader>t :CtrlP<cr>
@@ -67,11 +90,16 @@ let g:ctrlp_working_path_mode = 2
 let g:ctrlp_by_filename = 0
 let g:ctrlp_max_files = 1000
 let g:ctrlp_max_depth = 6
-let g:ctrlp_root_markers = ['.git']
-let g:ctrlp_user_command = {
-  \ 'types': { 
-    \ 1: ['.git/', 'cd %s && git ls-files'],
-    \ 2: ['.hg', 'hg --cwd %s locate -I .']
-    \ },
-  \ 'fallback': 'find %s -type f | head -' . g:ctrlp_max_files
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'node': 'node_modules\',
+  \ 'apple': '\.DS_Store$'
   \ }
+"let g:ctrlp_root_markers = ['.git']
+"let g:ctrlp_user_command = {
+"  \ 'types': {
+"    \ 1: ['.git', 'cd %s && git ls-files'],
+"    \ 2: ['.hg', 'hg --cwd %s locate -I .']
+"    \ },
+"  \ 'fallback': 'find %s -type f | head -' . g:ctrlp_max_files
+"  \ }
