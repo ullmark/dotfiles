@@ -16,6 +16,7 @@ set noeb vb t_vb=
 set complete-=i
 " I want a slighly bigger preview window.
 set previewheight=25
+set foldmethod=syntax
 
 " Set Color Theme
 colors zenburn 
@@ -39,6 +40,10 @@ noremap <space> :
 
 " Switch between last two buffers
 nnoremap <leader><leader> <C-^>
+
+" easer fold/unfold with just a keypress
+nnoremap f za
+nnoremap F zR
 
 au BufRead,BufNewFile *.html set filetype=mustache
 
