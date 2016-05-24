@@ -45,6 +45,9 @@ nnoremap <leader><leader> <C-^>
 nnoremap f za
 nnoremap F zR
 
+" extra fugitive
+noremap <F4> :Gblame<CR>
+
 au BufRead,BufNewFile *.html set filetype=mustache
 
 " Autofix extra whitespace on write for the following filetypes
