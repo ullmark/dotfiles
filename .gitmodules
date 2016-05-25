@@ -19,3 +19,9 @@
 [submodule "janus/mustache"]
 	path = janus/mustache
 	url = git://github.com/mustache/vim-mode.git
+[submodule "janus/jshint2.vim"]
+	path = janus/jshint2.vim
+	url = git@github.com:Shutnik/jshint2.vim.git
+[submodule "janus/linediff.vim"]
+	path = janus/linediff.vim
+	url = git@github.com:AndrewRadev/linediff.vim.git
