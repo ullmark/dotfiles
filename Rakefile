@@ -1,4 +1,6 @@
+require 'mkmf'
 IGNORE_FILES = ['Rakefile', 'README.md', 'bash', 'shared']
+FORMULAS = ['macvim', 'mongodb', 'thefuck']
 
 # Colors the provided message green
 def green(msg)
@@ -10,7 +12,7 @@ def red(msg)
   "\033[0;31m#{msg}\033[0;37m"
 end
 
-# Method that puts the message provided 
+# Method that puts the message provided
 # to the STDOUT
 def info(msg, status)
   puts "* #{msg} [ #{green(status)} ]"
@@ -52,4 +54,20 @@ task :install do
   end
 
   puts green("ok!")
+end
+
+# brew: this task installs the formulas missing. NOTE: it doesn't upgrade formulas already installed
+# use `brew upgrade` for that.
+desc "Install the formulas needed with homebrew"
+task :brew do
+  unless find_executable 'brew'
+    error("brew not found in $PATH", "aborting")
+    next
+  end
+  formulas_present = `brew list`.split(/\n/)
+  formulas_to_install = FORMULAS - formulas_present
+  unless formulas_to_install.empty?
+    system("brew install #{formulas_to_install.join(" ")}")
+  end
+  puts green("ok!");
 end
