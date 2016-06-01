@@ -25,3 +25,6 @@
 [submodule "janus/linediff.vim"]
 	path = janus/linediff.vim
 	url = git@github.com:AndrewRadev/linediff.vim.git
+[submodule "janus/typescript-vim"]
+	path = janus/typescript-vim
+	url = git@github.com:leafgarland/typescript-vim.git
