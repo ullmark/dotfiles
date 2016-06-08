@@ -18,6 +18,6 @@ alias mongod="mongod run --config /usr/local/etc/mongod.conf"
 alias http="python -m SimpleHTTPServer 8080"
 
 # Util
-alias d="mvim -v ."
+alias d="mvim ."
 
 alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
