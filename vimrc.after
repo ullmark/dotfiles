@@ -87,6 +87,7 @@ call NERDTreeHighlightFile('coffee', 'Red', 'none', '#ffb380', '#3f3f3f')
 call NERDTreeHighlightFile('js', 'Red', 'none', '#ffb380', '#3f3f3f')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#3f3f3f')
 
+let NERDTreeShowLineNumbers=1
 "let NERDTreeIgnore = ['node_modules$']
 
 " CtrlP
