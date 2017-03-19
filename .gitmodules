@@ -28,3 +28,6 @@
 [submodule "janus/typescript-vim"]
 	path = janus/typescript-vim
 	url = git@github.com:leafgarland/typescript-vim.git
+[submodule "janus/tabular"]
+	path = janus/tabular
+	url = git@github.com:godlygeek/tabular.git
