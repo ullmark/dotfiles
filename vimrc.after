@@ -19,7 +19,7 @@ set previewheight=25
 set foldmethod=syntax
 
 " Set Color Theme
-colors zenburn 
+colors zenburn
 set guifont=Monaco:h16
 set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar
@@ -28,6 +28,9 @@ let mapleader=","
 
 " remove pipes in vertical split
 set fillchars=vert:\ 
+
+" Gdiff
+set diffopt+=vertical
 
 " Map :W to :w since i always accidentally press wrong
 " command W w
@@ -54,11 +57,13 @@ au BufRead,BufNewFile *.html set filetype=mustache
 autocmd BufWritePre *.js :%s/\s\+$//e
 autocmd BufWritePre *.rb :%s/\s\+$//e
 autocmd BufWritePre *.haml :%s/\s\+$//e
-autocmd BufWritePre *.html :%s/\s\+$//e
 autocmd BufWritePre *.scss :%s/\s\+$//e
+autocmd BufWritePre *.less :%s/\s\+$//e
 autocmd BufWritePre *.coffee :%s/\s\+$//e
 autocmd BufWritePre *.lisp :%s/\s\+$//e
 autocmd BufWritePre *.php :%s/\s\+$//e
+autocmd BufWritePre *.html :%s/\s\+$//e
+autocmd BufWritePre *.mustache :%s/\s\+$//e
 
 let g:Powerline_symbols = 'fancy'
 
@@ -88,7 +93,6 @@ call NERDTreeHighlightFile('js', 'Red', 'none', '#ffb380', '#3f3f3f')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#3f3f3f')
 
 let NERDTreeShowLineNumbers=1
-"let NERDTreeIgnore = ['node_modules$']
 
 " CtrlP
 nnoremap <silent> t :CtrlP<cr>
@@ -98,6 +102,12 @@ nnoremap <silent><leader>b :CtrlPBuffer<cr>
 
 " shorthand to split
 nnoremap <silent><leader>s :vsp<cr>
+
+" tabularize
+nnoremap <silent><leader>o :Tabularize /=<cr>
+
+" JSON formatting
+nnoremap <silent><leader>q :%!python -m json.tool<cr>
 
 let g:ctrlp_match_window_bottom = 0
 let g:ctrlp_match_window_reversed = 0
