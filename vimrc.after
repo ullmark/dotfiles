@@ -93,6 +93,8 @@ call NERDTreeHighlightFile('js', 'Red', 'none', '#ffb380', '#3f3f3f')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#3f3f3f')
 
 let NERDTreeShowLineNumbers=1
+let NERDTreeIgnore=['^node_modules$']
+let NERDTreeMinimalUI=1
 
 " CtrlP
 nnoremap <silent> t :CtrlP<cr>
