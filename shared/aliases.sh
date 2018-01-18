@@ -1,4 +1,3 @@
-
 # management
 alias dots="mvim ~/.dotfiles"
 

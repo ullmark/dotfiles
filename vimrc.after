@@ -55,6 +55,7 @@ au BufRead,BufNewFile *.html set filetype=mustache
 
 " Autofix extra whitespace on write for the following filetypes
 autocmd BufWritePre *.js :%s/\s\+$//e
+autocmd BufWritePre *.jsx :%s/\s\+$//e
 autocmd BufWritePre *.rb :%s/\s\+$//e
 autocmd BufWritePre *.haml :%s/\s\+$//e
 autocmd BufWritePre *.scss :%s/\s\+$//e
@@ -90,6 +91,8 @@ call NERDTreeHighlightFile('scss', 'cyan', 'none', '#efdcbc', '#3f3f3f')
 call NERDTreeHighlightFile('less', 'cyan', 'none', '#efdcbc', '#3f3f3f')
 call NERDTreeHighlightFile('coffee', 'Red', 'none', '#ffb380', '#3f3f3f')
 call NERDTreeHighlightFile('js', 'Red', 'none', '#ffb380', '#3f3f3f')
+call NERDTreeHighlightFile('jsx', 'Red', 'none', '#ffb380', '#3f3f3f')
+call NERDTreeHighlightFile('vue', 'Red', 'none', '#ffb380', '#3f3f3f')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#3f3f3f')
 
 let NERDTreeShowLineNumbers=1
