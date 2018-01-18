@@ -122,3 +122,8 @@ let g:ctrlp_by_filename = 0
 let g:ctrlp_max_files = 1000
 let g:ctrlp_max_depth = 6
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+
+" fzf
+set rtp+=/usr/local/opt/fzf
+
+let g:vue_disable_pre_processors=1
