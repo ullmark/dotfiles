@@ -1,6 +1,6 @@
 if has("gui_macvim")
   set fuoptions=maxvert,maxhorz
-  set guifont=Monaco:h16
+  set guifont=Monaco:h18
   set guioptions=aAce
   set columns=179
   set lines=50

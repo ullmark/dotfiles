@@ -55,13 +55,11 @@ au BufRead,BufNewFile *.html set filetype=mustache
 
 " Autofix extra whitespace on write for the following filetypes
 autocmd BufWritePre *.js :%s/\s\+$//e
+autocmd BufWritePre *.vue :%s/\s\+$//e
 autocmd BufWritePre *.jsx :%s/\s\+$//e
 autocmd BufWritePre *.rb :%s/\s\+$//e
-autocmd BufWritePre *.haml :%s/\s\+$//e
 autocmd BufWritePre *.scss :%s/\s\+$//e
 autocmd BufWritePre *.less :%s/\s\+$//e
-autocmd BufWritePre *.coffee :%s/\s\+$//e
-autocmd BufWritePre *.lisp :%s/\s\+$//e
 autocmd BufWritePre *.php :%s/\s\+$//e
 autocmd BufWritePre *.html :%s/\s\+$//e
 autocmd BufWritePre *.mustache :%s/\s\+$//e
