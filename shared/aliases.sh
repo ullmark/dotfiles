@@ -20,3 +20,5 @@ alias http="python -m SimpleHTTPServer 8080"
 alias d="mvim ."
 
 alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
+
+alias ic='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
